@@ -1,5 +1,7 @@
 const fs = require('fs');
 const yaml = require('js-yaml');
+const path = require('path')
+
 module.exports = {
     getServiceList: function() {
     var serviceList;
