@@ -39,6 +39,11 @@ config['buildService'] =  ({
           request,
           context
       }) => {
+          const myHeaders = context.req.headers
+              for (const key in myHeaders) {
+                  const value = myHeaders[key];
+                  console.log('Request header ' + key + ' with value ' + value);
+              }
           if (context.req && context.req.headers['x-channel']) {
               request.http.headers.set('x-channel', context.req.headers['x-channel']);
           }

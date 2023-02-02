@@ -1,3 +1,6 @@
 [
-
+  {
+    name: 'profile-bff',
+    url: 'https://accounts-etysdvp0r-sahil-goel.vercel.app/graphql'
+  }
 ]
